@@ -59,15 +59,16 @@
         ];
         $.each(data, function (i, noticia) {
           $("#container").append(`
-                
+
         <div class="noticia">
           <img class="imgnew" src="${noticia.urlToImage}"/>
             <h2>${noticia.title}</h2>
             <p>${noticia.description}</p>
             <p>${noticia.content}</p>
             <p><strong>Autor:</strong> ${noticia.author}</p>
+            <a href=${noticia.url}>Ver Noticia</a>
         </div>
-        
+
             `);
         });
       });
@@ -212,7 +213,7 @@
       .imgnew {
         width: 250px;
         height: 250px;
-        object-fit: scale-down;
+        object-fit: contain;
       }
     </style>
     <title>News</title>
