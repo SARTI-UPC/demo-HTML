@@ -1,11 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Op Clientes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comentarios de Clientes</title>
 </head>
 <body>
-    
+
+  <h1>Comentarios y Experiencias de Clientes</h1>
+
+  <div id="commentForm">
+    <h2>Deja tu Comentario</h2>
+    <form id="addCommentForm">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="comment">Comentario:</label>
+      <textarea id="comment" name="comment" rows="4" required></textarea>
+
+      <button type="submit">Enviar Comentario</button>
+    </form>
+  </div>
+
+  <div id="comments">
+    <h2>Comentarios Recientes</h2>
+    <div class="comment">
+      <p><strong>Usuario1:</strong> ¡Excelente servicio! El personal fue muy amable y atento.</p>
+      <p>Fecha: 2024-03-05</p>
+    </div>
+
+    <div class="comment">
+      <p><strong>Usuario2:</strong> Tuve una experiencia maravillosa. Los productos son de alta calidad.</p>
+      <p>Fecha: 2024-03-04</p>
+    </div>
+    <!-- Agregar más comentarios aquí -->
+  </div>
+
+  <script>
+    document.getElementById("addCommentForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      const name = document.getElementById("name").value;
+      const comment = document.getElementById("comment").value;
+
+      displayComment(name, comment);
+      
+      // Limpiar el formulario
+      document.getElementById("name").value = "";
+      document.getElementById("comment").value = "";
+    });
+
+    function displayComment(name, comment) {
+      const commentsContainer = document.getElementById("comments");
+
+      const newCommentDiv = document.createElement("div");
+      newCommentDiv.classList.add("comment");
+
+      const commentContent = document.createElement("p");
+      commentContent.innerHTML = `<strong>${name}:</strong> ${comment}`;
+
+      const commentDate = document.createElement("p");
+      const currentDate = new Date().toLocaleDateString();
+      commentDate.textContent = `Fecha: ${currentDate}`;
+
+      newCommentDiv.appendChild(commentContent);
+      newCommentDiv.appendChild(commentDate);
+
+      commentsContainer.insertBefore(newCommentDiv, commentsContainer.firstChild);
+    }
+  </script>
+
 </body>
 </html>
