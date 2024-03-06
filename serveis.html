@@ -3,7 +3,7 @@
     <header>
         <meta charset="utf-8"/>
     </header>
-    <head></head>
+
     <body>
         <div style="margin: 20px; width: 100%">
             <h1 style="text-align: center;">Serveis</h1>
@@ -16,7 +16,7 @@
                             <!-- Servei 1 -->
                             <td style="text-align: center;">
                                 <div>
-                                    <a href="#">
+                                    <a href="detallServei.html">
                                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" 
                                         width="100px" height="100px"/>
                                     </a>
@@ -33,7 +33,7 @@
                             <!-- Servei 2 -->
                             <td style="text-align: center;">
                                 <div>
-                                    <a href="#">
+                                    <a href="detallServei.html">
                                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" 
                                         width="100px" height="100px"/>
                                     </a>
@@ -50,7 +50,7 @@
                             <!-- Servei 3 -->
                             <td style="text-align: center;">
                                 <div>
-                                    <a href="#">
+                                    <a href="detallServei.html">
                                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" 
                                         width="100px" height="100px"/>
                                     </a>
@@ -70,10 +70,18 @@
                 <br>
                 <a href="#"><h2 style="text-align: center;">+ INFO</h2></a>
             </div>
+            <hr/>
             <!-- Formulari de consulta de serveis -->
             <div>
+                <h4>Demana més informació</h3>
                 <form>
-                    <label for="fname">Nom</label><br>
+                    <label for="fname" style="margin: 5px;">Nom</label><br>
+                    <input type="text" id="fname" style="margin: 5px;"><br>
+                    <label for="lname" style="margin: 5px;">Cognom</label><br>
+                    <input type="text" id="lname" style="margin: 5px;"><br>
+                    <label for="message" style="margin: 5px;">Missatge</label><br>
+                    <textarea id="message" cols="60" rows="5" style="margin: 5px;">Escriu aquí la teva consulta</textarea><br>
+                    <input type="submit" id="submit" style="margin: 5px;"><br>
                 </form>
             </div>
         </div>
