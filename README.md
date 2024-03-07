@@ -8,8 +8,8 @@ Aquest repositori és un esforç col·laboratiu realitzat per un grup d'estudian
 
 - [Jaume Monasterio](https://github.com/jaumemonasterio)
 - [Camilo Toro](https://github.com/torokami)
+- [Alberto Domínguez](https://github.com/gitpcgo)
 - [Nom d'Usuari a GitHub 3](https://github.com/username3)
-- ...
 
 Si us plau, consulta els perfils individuals per veure les contribucions i la informació de contacte.
 
