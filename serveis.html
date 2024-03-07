@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             @import url("https://fonts.googleapis.com/css?family=Oswald:500");
             .back {
@@ -43,6 +44,35 @@
             }
             nav a:hover:before {
               animation: in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+            }
+            h3 {
+              text-align: start;
+              padding-left: 10px;
+            }
+            p {
+              text-align: justify;
+              margin: 10px;
+            }
+            td {
+              text-align: center;
+            }
+            table {
+              width: 100%;
+            }
+            caption {
+              margin: 10px;
+            }
+            h1 {
+              text-align: center; 
+              margin-top: 130px;
+            }
+            img {
+              border-radius: 20%;
+            }
+            i {
+              padding-left: 10px; 
+              color: cadetblue; 
+              font-size: 20px;
             }
             @keyframes in {
               0% {
@@ -99,24 +129,24 @@
             <a href="contacte.html">Contacte</a>
         </nav>
         <div style="margin: auto; width: 95%">
-            <h1 style="text-align: center; margin-top: 130px;">Serveis</h1>
+            <h1>Serveis</h1>
             <!-- Taula de serveis -->
             <div>
-                <table style="width: 100%;">
-                    <caption style="margin: 10px;">Coneix els nostres serveis</caption>
+                <table>
+                    <caption>Coneix els nostres serveis</caption>
                     <tbody>
                         <tr>
                             <!-- Servei 1 -->
-                            <td style="text-align: center;">
+                            <td>
                                 <div>
                                     <a href="detallServei.html">
                                         <img src="https://picsum.photos/id/3/100" 
-                                        width="100px" height="100px" style="border-radius: 20%;"/>
+                                        width="100px" height="100px"/>
                                     </a>
                                 </div>
                                 <div>
                                     <h3>Servei 1</h3>
-                                    <p style="text-align: justify; margin: 10px;">
+                                    <p>
                                         Lorem ipsum dolor sit amet consectetur adipiscing elit ultricies 
                                         platea, tempus metus inceptos quisque per integer habitant quis 
                                         primis praesent, aliquet nunc nascetur proin diam rutrum eu class. 
@@ -124,16 +154,16 @@
                                 </div>
                             </td>
                             <!-- Servei 2 -->
-                            <td style="text-align: center;">
+                            <td>
                                 <div>
                                     <a href="detallServei.html">
                                         <img src="https://picsum.photos/id/160/100" 
-                                        width="100px" height="100px" style="border-radius: 20%;"/>
+                                        width="100px" height="100px"/>
                                     </a>
                                 </div>
                                 <div>
                                     <h3>Servei 2</h3>
-                                    <p style="text-align: justify; margin: 10px;">
+                                    <p>
                                         Lorem ipsum dolor sit amet consectetur adipiscing elit ultricies 
                                         platea, tempus metus inceptos quisque per integer habitant quis 
                                         primis praesent, aliquet nunc nascetur proin diam rutrum eu class. 
@@ -141,16 +171,16 @@
                                 </div>
                             </td>
                             <!-- Servei 3 -->
-                            <td style="text-align: center;">
+                            <td>
                                 <div>
                                     <a href="detallServei.html">
                                         <img src="https://picsum.photos/id/117/100" 
-                                        width="100px" height="100px" style="border-radius: 20%;"/>
+                                        width="100px" height="100px"/>
                                     </a>
                                 </div>
                                 <div>
                                     <h3>Servei 3</h3>
-                                    <p style="text-align: justify; margin: 10px;">
+                                    <p>
                                         Lorem ipsum dolor sit amet consectetur adipiscing elit ultricies 
                                         platea, tempus metus inceptos quisque per integer habitant quis 
                                         primis praesent, aliquet nunc nascetur proin diam rutrum eu class. 
@@ -160,13 +190,15 @@
                         </tr>
                     </tbody>
                 </table>
-                <br>
-                <a href="#" style="text-decoration: none;"><h2 style="text-align: right; ">+ INFO</h2></a>
             </div>
             <hr/>
-            <!-- Formulari de consulta de serveis -->
-            <div>
-                <h4>Demana més informació</h3>
+            <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: end;">
+              <!-- Formulari de consulta de serveis -->
+              <div>
+                <div style="display: flex; flex-direction: row; align-items: center;">
+                  <h4>Demana més informació</h4>
+                  <i class="fa fa-info"></i>
+                </div>
                 <form action="index.html">
                     <label for="fname" style="margin: 5px;">Nom</label><br>
                     <input type="text" id="fname" style="margin: 5px;"><br>
@@ -176,7 +208,13 @@
                     <textarea id="message" cols="60" rows="5" style="margin: 5px;">Escriu aquí la teva consulta</textarea><br>
                     <input type="submit" id="submit" style="margin: 5px;"><br>
                 </form>
+              </div>
+              <!-- Rating -->
+              <div>
+
+              </div>
             </div>
+          </div>
         </div>
     </body>
 </html>
