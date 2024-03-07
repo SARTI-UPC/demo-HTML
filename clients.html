@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clientes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comentarios de Clientes</title>
 </head>
 <body>
-    
+
+  <h1>Comentarios y Experiencias de Clientes</h1>
+
+  <div id="commentForm">
+    <h2>Deja tu Comentario</h2>
+    <form id="addCommentForm">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="comment">Comentario:</label>
+      <textarea id="comment" name="comment" rows="4" required></textarea>
+
+      <button type="submit">Enviar Comentario</button>
+    </form>
+  </div>
+
+  <div id="comments">
+    <h2>Comentarios Recientes</h2>
+    <div class="comment">
+      <p><strong>Jaume Monasterio:</strong> ¡Excelente servicio! El personal fue muy amable y atento.</p>
+      <p>Fecha: 2024-03-05</p>
+    </div>
+
+    <div class="comment">
+      <p><strong>Camilo Toro</strong> Tuve una experiencia maravillosa. Los productos son de alta calidad.</p>
+      <p>Fecha: 2024-03-04</p>
+    </div>
+    <!--comentarios aquí -->
+  </div>
+
 </body>
 </html>
