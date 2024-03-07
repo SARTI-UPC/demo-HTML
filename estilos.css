@@ -82,6 +82,10 @@
     h1 {
       text-align: center;
       color: #220049; 
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
     }
     form {
       display: flex;
@@ -90,5 +94,8 @@
     }
     #commentForm {
         margin-top: 150px;
+    }
+    #name {
+       
     }
     
