@@ -3,17 +3,142 @@
     <head>
         <title>Detall dels serveis</title>
 
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
         <style>
-            p { text-align: justify;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                font-size: 15px;}
-            h1 {font-family: Verdana, Geneva, Tahoma, sans-serif;}
-        </style>
+            @import url("https://fonts.googleapis.com/css?family=Oswald:500");
+            .back {
+              position: fixed;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 130px;
+              background: url(https://pp.userapi.com/c841122/v841122831/327e/nHt-92F6yc4.jpg)
+                no-repeat top center #efeff1;
+              background-size: cover;
+            }
+            nav {
+              width: 100%;
+              position: fixed;
+              top: 50px;
+              text-align: center;
+            }
+            nav a {
+              font-family: "Oswald", sans-serif;
+              font-weight: 500;
+              text-transform: uppercase;
+              text-decoration: none;
+              color: #16151b;
+              margin: 0 15px;
+              font-size: 16px;
+              letter-spacing: 1px;
+              position: relative;
+              display: inline-block;
+            }
+            nav a:before {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 3px;
+              background: #16151b;
+              top: 47%;
+              animation: out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+            }
+            nav a:hover:before {
+              animation: in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+            }
+            @keyframes in {
+              0% {
+                width: 0;
+                left: 0;
+                right: auto;
+              }
+              100% {
+                left: 0;
+                right: auto;
+                width: 100%;
+              }
+            }
+            @keyframes out {
+              0% {
+                width: 100%;
+                left: auto;
+                right: 0;
+              }
+              100% {
+                width: 0;
+                left: auto;
+                right: 0;
+              }
+            }
+            @keyframes show {
+              0% {
+                opacity: 0;
+                transform: translateY(-10px);
+              }
+              100% {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+      
+            @for $i from 1 through 5 {
+              nav a:nth-child(#{$i}) {
+                animation: show 0.2s #{$i * 0.1+1}s ease 1 both;
+              }
+            }
+
+            /* MI PARTE DEL CSS */
+            #submit {text-align: center;}
+            p, li, label {
+              font-size: 15px;
+              text-align: justify;
+            }
+            p, li, label, h1, h3, h4 {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+            .footer {
+              width: 100%;
+              height: 100%;
+              background: url(https://pp.userapi.com/c841122/v841122831/327e/nHt-92F6yc4.jpg)
+                no-repeat top center #efeff1;
+              background-size: cover;
+            }
+            hr {border-width: 5px;}
+            .content {
+              background-color: lightgrey;
+              margin-top: 120px;
+            }
+            .contentDetail {
+              background-color: white;
+              margin: 0 auto;
+              width: 90%;
+              box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+              border: 1px solid;
+            }
+          </style>
     </head>
 
     <body>
+        <div class="back"></div>
+        <nav>
+        <a href="#">Home</a>
+        <a href="serveis.html">Serveis</a>
+        <a href="sectors.html">Sectors</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="clients.html">Clients</a>
+        <a href="privacitat.html">Privacitat</a>
+        <a href="#">Otro</a>
+        <a href="#">Otro+</a>
+        <a href="Preus.html">Preus</a>
+        <a href="news.html">News</a>
+        <a href="quisom.html">Qui som</a>
+        <a href="contacte.html">Contacte</a>
+        </nav>
+        <main></main>
 
-        <div>
+
+        <div class="content">
+          <div class="contentDetail">
             <hr/>
             <table width="50%" align="center">
                 <tr align="center">
@@ -21,30 +146,90 @@
                 </tr>
                 
                 <tr align="center">
-                    <td><h1>SERVICIO</h1></td>
+                    <td><h1>SERVEI 1</h1></td>
                 </tr>
 
                 <tr>
-                    <td>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo dolor in tempus egestas. Praesent venenatis eget enim sed sollicitudin. Nulla aliquet commodo consequat. Integer suscipit urna dolor, vitae egestas risus viverra quis. Mauris sagittis pellentesque odio, quis ullamcorper nisi viverra vel. Cras lacinia arcu consequat, aliquam turpis et, scelerisque orci. Sed sit amet mattis enim. Vivamus venenatis sem non mi convallis, a facilisis ligula fermentum. Integer et ligula posuere, porta ligula non, tempor tortor. </p>
-                        <p> Proin dapibus consectetur sapien a efficitur. Fusce consequat nunc ut scelerisque molestie. In eleifend erat sapien, id pretium erat dignissim id. Vivamus sit amet dignissim quam, varius efficitur orci. Sed accumsan turpis ligula, eu ultricies dolor convallis sit amet. Nunc volutpat ante vel vestibulum tempus. Nam sed est sit amet quam sagittis ultrices quis vitae erat.</p>
-
-                        <p> Quisque mauris odio, gravida sed aliquam a, faucibus eget felis. Aenean pharetra dolor ac tortor ultrices, consequat faucibus enim auctor. Curabitur congue elementum libero in semper. Suspendisse vel semper mauris. Curabitur leo risus, suscipit id laoreet vel, mattis ac elit. Integer ac pellentesque dui, ac pulvinar quam. Sed eu arcu ex. Fusce pharetra iaculis nunc eget semper. Sed a scelerisque erat, vel pulvinar leo. Curabitur pulvinar finibus mauris, sed cursus nunc fermentum at. In dictum augue est, a finibus ante viverra id. Vestibulum finibus sit amet erat sit amet condimentum.</p>
-                    </td>
+                  <td>
+                    <p> En nuestra empresa, nos enorgullece ofrecer un servicio integral de tecnología diseñado para potenciar el éxito de empresas innovadoras en la era digital.
+                        Nos especializamos en proporcionar soluciones tecnológicas de vanguardia que impulsan la eficiencia operativa, mejoran la colaboración interna y fortalecen la presencia en línea de nuestros clientes.
+                    </p>
+                  </td>
                 </tr>
 
                 <tr>
-                    <td>
-                        <ul>
-                            <li>Morbi dapibus egestas massa. Integer erat mauris.</li>
-                            <li>Morbi dapibus egestas massa. Integer erat mauris.</li>
-                            <li>Morbi dapibus egestas massa. Integer erat mauris.</li>
-                            <li>Morbi dapibus egestas massa. Integer erat mauris.</li>
-                        </ul>
-                    </td>
+                  <td>
+                    <h3>Características destacadas:</h3>
+
+                    <ul>
+                      <li><h4>Desarrollo de Software Personalizado:</h4></li>
+                      <p>Creamos soluciones de software a medida que se adaptan perfectamente a las necesidades específicas de tu empresa. Ya sea un sistema de gestión empresarial, una aplicación móvil o un software especializado, nuestro equipo de desarrolladores trabaja para convertir tus ideas en realidad.</p>
+                      <li><h4>Infraestructura Tecnológica Robusta:</h4></li>
+                      <p>Diseñamos, implementamos y gestionamos infraestructuras tecnológicas sólidas y seguras. Desde servidores en la nube hasta redes empresariales, garantizamos un entorno tecnológico que respalda el crecimiento de tu negocio y asegura la integridad de tus datos.</p>
+                      <li><h4>Consultoría Tecnológica:</h4></li>
+                      <p>Nuestros expertos en tecnología ofrecen servicios de consultoría para ayudarte a tomar decisiones informadas sobre la adopción de nuevas tecnologías. Analizamos tu actual infraestructura, identificamos áreas de mejora y te asesoramos sobre las últimas tendencias tecnológicas que podrían beneficiar a tu empresa.</p>
+                      <li><h4>Ciberseguridad Avanzada:</h4></li>
+                      <p>Protegemos tu empresa contra amenazas cibernéticas mediante la implementación de medidas de seguridad proactivas. Desde firewalls avanzados hasta programas de concienciación para empleados, nos comprometemos a mantener la integridad y confidencialidad de tus datos.</p>
+                      <li><h4>Soporte Técnico Personalizado:</h4></li>
+                      <p>Nuestro equipo de soporte técnico está disponible las 24 horas, los 7 días de la semana, para resolver cualquier problema técnico que puedas enfrentar. Ofrecemos un servicio personalizado y rápido para minimizar el tiempo de inactividad y mantener tu empresa en funcionamiento.</p>
+                    </ul>
+                  </td>
                 </tr>
-                
+
+                <tr>
+                  <td>
+                    <h3>Beneficios:</h3>
+                    <ul>
+                      <li>Aumento de la eficiencia operativa.</li>
+                      <li>Mejora de la productividad y la colaboración.</li>
+                      <li>Mayor seguridad y protección de datos.</li>
+                      <li>Adaptabilidad a las últimas tendencias tecnológicas.</li>
+                      <li>Asesoramiento estratégico para la toma de decisiones tecnológicas.</li>
+                    </ul>
+                  </td>
+                </tr>
             </table>
+          <div>
+        </div>
+
+        <div class="footer">
+            <hr/>
+            <form action="/action_page.php">
+                <table align="center">
+                    <tr>
+                        <td><label for="fname">Nom:</label></td>
+                        <td><input type="text" id="fname" name="fname"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="service">Servei:</label></td>
+                        <td>
+                            <select name="service" id="service">
+                                <option value="servei1">Servei 1</option>
+                                <option value="servei2">Servei 2</option>
+                                <option value="servei3">Servei 3</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><label for="comment">Comentari:</label></td>
+                        <td>
+                            <textarea name="message" rows="5" cols="30">
+                            Deixa el teu comentari.
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="privacy" name="privacy"></td>
+                        <td><label for="privacy">Accepto la política de privacitat</label></td>
+                    </tr>
+                    <tr><td id="submit" colspan="2"><input type="submit" value="Enviar"></td></tr>
+                </table>
+            </form> 
+            <hr/>
         </div>
     </body>
 </html>
