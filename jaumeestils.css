@@ -82,6 +82,7 @@
             footer {
             background-color: #777;
             padding: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: center;
             color: white;
 }
@@ -94,5 +95,30 @@ h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     text-decoration: underline;
+    font-size: 40px;
+
+}
+
+
+h2{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: rgb(110, 155, 65);
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: rgb(20, 36, 3);
+
+}
+
+label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14;
+    color: rgb(124, 168, 80);
 
 }
