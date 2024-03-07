@@ -11,6 +11,7 @@ Aquest repositori és un esforç col·laboratiu realitzat per un grup d'estudian
 - [Alberto Domínguez](https://github.com/gitpcgo)
 - [Paula-LL](https://github.com/Paula-LL)
 - [Josep Martín](https://github.com/KinoGlazPrusia)
+- [Laura Climent](https://github.com/laclipi)
 - [Nom d'Usuari a GitHub 3](https://github.com/username3)
 
 Si us plau, consulta els perfils individuals per veure les contribucions i la informació de contacte.
