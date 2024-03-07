@@ -80,11 +80,25 @@
     }
   }
 
-  @for $i from 1 through 5 {
+/*  @for $i from 1 through 5 {
     nav a:nth-child(#{$i}) {
       animation: show 0.2s #{$i * 0.1+1}s ease 1 both;
     }
-  }
+  } */
+</style>
+<style>
+a.WAPP:link, a.WAPP:visited {
+  background-color: #c6d8f4;
+  color: rgba(255, 255, 251, 0.997);
+  padding: 9px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.WAPP:hover, a.WAPP:active {
+  background-color: rgb(15, 150, 222);
+}
 </style>
 <title>CONTACTO</title> 
 </head>
@@ -123,10 +137,18 @@
 </iframe> 
 <br></br>
 <h2>CONTACTO / CONTACTE</h2>
-<ul>
-    <li> <a href="https://directori.upc.edu/directori/dadesPersona.jsp?id=1004405"> Neus Vidal  </a></li>
-    <li> <a href="https://directori.upc.edu/directori/dadesPersona.jsp?id=1003835"> Toni Oller  </a></li>
-</ul>
+<!--
+  <ul>
+    <li> <a href="https://directori.upc.edu/directori/dadesPersona.jsp?id=1004405"> Neus Vidal  </a> <a class="WAPP" href=https://api.whatsapp.com/send/?phone=34600000000> Envia-li un missatge Whatsapp </a></li>
+   
+    <li> <a href="https://directori.upc.edu/directori/dadesPersona.jsp?id=1003835"> Toni Oller  </a> <a class="WAPP" href=https://api.whatsapp.com/send/?phone=34600000000> Envia-li un missatge Whatsapp </a></li>
+  </ul>
+-->
+<div>
+<a href="https://directori.upc.edu/directori/dadesPersona.jsp?id=1004405"> Neus Vidal  </a> <a class="WAPP" href=https://api.whatsapp.com/send/?phone=34600000000> Envia a la Neus un missatge Whatsapp </a></li>
+<a href="https://directori.upc.edu/directori/dadesPersona.jsp?id=1003835"> Toni Oller  </a> <a class="WAPP" href=https://api.whatsapp.com/send/?phone=34600000000> Envia al Toni un missatge Whatsapp </a></li>
+</div> 
+
 <h2>DEJA TU COMENTARIO / DEIXA EL TEU COMENTARI </h2> 
 
 <form id="fcontacte" >
