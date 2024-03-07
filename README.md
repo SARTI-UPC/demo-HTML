@@ -16,7 +16,7 @@ Si us plau, consulta els perfils individuals per veure les contribucions i la in
 
 ## Ús:
 
-El projecte està desplegat sota la seguent URL:
+El projecte està desplegat sota la següent URL:
 [FOAP2023](https://oracle.upc.edu/FOAP2023)
 
 
