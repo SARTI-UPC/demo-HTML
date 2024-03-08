@@ -1,169 +1,114 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Detall dels serveis</title>
+<head>
+    <title>Detall dels serveis</title>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="CSS/estilos.css"/>
+    <link rel="stylesheet" href="CSS/detallServeiCSS.css"/>
+    
+</head>
 
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        
-        <link rel="stylesheet" href="estilos.css"/>
-
-        <style>
-           
-            /* MI PARTE DEL CSS */
-           
-
-            #submit {text-align: center;}
-
-            p, li, label {
-                font-size: 12px;
-                text-align: justify;
-            }
-
-            p, li, label, h1, h3, h4 {
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-            }
-
-            label {
-                font-weight: bold;
-            }
-
-            .content {
-                background-color: lightgray;
-            }
-
-            .contentDetail {
-                background-color: white;
-                padding: 50px 100px;
-                text-align: center;
-            }
-
-            .detail {
-                display: grid;
-                grid-template-columns: 1fr 2fr;
-            }
-
-            .contentDetail, .footer {
-                border: 1px solid;
-                border-top: 5px solid;
-                border-bottom: 5px solid;
-                border-color: gray;
-                box-shadow: rgba(0,0,0,0.2) 2px 2px 5px;
-                margin: auto 10%;
-            }
+<body>
+    <nav>
+        <a class="logo" href="index.html">
+            <img
+            src="https://images.vexels.com/media/users/3/131123/isolated/preview/1510cb7a7c637368c3aa3cc72f46c662-icono-de-circulo-de-bubl-de-idea.png"
+            alt="Home"
+            />
+        </a>
+        <a href="serveis.html">Serveis</a>
+        <a href="detallServei.html">Detall Serveis</a>
+        <a href="sectors.html">Sectors</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="opinions.html">Opinions</a>
+        <a href="clients.html">Clients</a>
+        <a href="privacitat.html">Privacitat</a>
+        <a href="Preus.html">Preus</a>
+        <a href="news.html">News</a>
+        <a href="quisom.html">Qui som</a>
+        <a href="contacte.html">Contacte</a>
+    </nav>
+    
+    
+    <div class="content">
+        <div class="contentDetail">
             
-            .footer {
-                /*background-color: darkcyan;*/
-                background: linear-gradient(to bottom, darkcyan, white);
-                display: flex;
-                justify-content: center;
-                padding: 2%;
-            }
-
-        </style>
-    </head>
-
-    <body>
-        <nav>
-            <a class="logo" href="index.html">
-              <img
-                src="https://images.vexels.com/media/users/3/131123/isolated/preview/1510cb7a7c637368c3aa3cc72f46c662-icono-de-circulo-de-bubl-de-idea.png"
-                alt="Home"
-              />
-            </a>
-            <a href="serveis.html">Serveis</a>
-            <a href="detallServei.html">Detall Serveis</a>
-            <a href="sectors.html">Sectors</a>
-            <a href="facilities.html">Facilities</a>
-            <a href="opinions.html">Opinions</a>
-            <a href="clients.html">Clients</a>
-            <a href="privacitat.html">Privacitat</a>
-            <a href="Preus.html">Preus</a>
-            <a href="news.html">News</a>
-            <a href="quisom.html">Qui som</a>
-            <a href="contacte.html">Contacte</a>
-        </nav>
-
-
-        <div class="content">
-            <div class="contentDetail">
-              
-                <img width="256" height="256" src="img/Servicio.png">
-
-                <h1>SERVEI 1</h1>
-
-                <p> 
+            <img width="256" height="256" src="img/Servicio.png">
+            
+            <div class="serviceTitle"><h1>SERVEI 1</h1></div>
+            
+            <p> 
                 En nuestra empresa, nos enorgullece ofrecer un servicio integral de tecnología diseñado para potenciar el éxito de empresas innovadoras en la era digital.
                 Nos especializamos en proporcionar soluciones tecnológicas de vanguardia que impulsan la eficiencia operativa, mejoran la colaboración interna y fortalecen la presencia en línea de nuestros clientes.
-                </p>
-
-                <div class="detail">
-                    <h3>Características destacadas:</h3>
-
-                    <ul>
-                        <li><h4>Desarrollo de Software Personalizado:</h4></li>
-                        <p>Creamos soluciones de software a medida que se adaptan perfectamente a las necesidades específicas de tu empresa. Ya sea un sistema de gestión empresarial, una aplicación móvil o un software especializado, nuestro equipo de desarrolladores trabaja para convertir tus ideas en realidad.</p>
-                        <li><h4>Infraestructura Tecnológica Robusta:</h4></li>
-                        <p>Diseñamos, implementamos y gestionamos infraestructuras tecnológicas sólidas y seguras. Desde servidores en la nube hasta redes empresariales, garantizamos un entorno tecnológico que respalda el crecimiento de tu negocio y asegura la integridad de tus datos.</p>
-                        <li><h4>Consultoría Tecnológica:</h4></li>
-                        <p>Nuestros expertos en tecnología ofrecen servicios de consultoría para ayudarte a tomar decisiones informadas sobre la adopción de nuevas tecnologías. Analizamos tu actual infraestructura, identificamos áreas de mejora y te asesoramos sobre las últimas tendencias tecnológicas que podrían beneficiar a tu empresa.</p>
-                        <li><h4>Ciberseguridad Avanzada:</h4></li>
-                        <p>Protegemos tu empresa contra amenazas cibernéticas mediante la implementación de medidas de seguridad proactivas. Desde firewalls avanzados hasta programas de concienciación para empleados, nos comprometemos a mantener la integridad y confidencialidad de tus datos.</p>
-                        <li><h4>Soporte Técnico Personalizado:</h4></li>
-                        <p>Nuestro equipo de soporte técnico está disponible las 24 horas, los 7 días de la semana, para resolver cualquier problema técnico que puedas enfrentar. Ofrecemos un servicio personalizado y rápido para minimizar el tiempo de inactividad y mantener tu empresa en funcionamiento.</p>
-                    </ul>
-
-                    <h3>Beneficios:</h3>
-
-                    <ul>
-                        <li>Aumento de la eficiencia operativa.</li>
-                        <li>Mejora de la productividad y la colaboración.</li>
-                        <li>Mayor seguridad y protección de datos.</li>
-                        <li>Adaptabilidad a las últimas tendencias tecnológicas.</li>
-                        <li>Asesoramiento estratégico para la toma de decisiones tecnológicas.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer">
-                <form action="/action_page.php">
-                    <table align="center">
-                        <tr>
-                            <td><label for="fname">Nom:</label></td>
-                            <td><input type="text" id="fname" name="fname"></td>
-                        </tr>
-                        <tr>
-                            <td><label for="email">Email:</label></td>
-                            <td><input type="email" id="email" name="email"></td>
-                        </tr>
-                        <tr>
-                            <td><label for="service">Servei:</label></td>
-                            <td>
-                                <select name="service" id="service">
-                                    <option value="servei1">Servei 1</option>
-                                    <option value="servei2">Servei 2</option>
-                                    <option value="servei3">Servei 3</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td valign="top"><label for="comment">Consulta:</label></td>
-                            <td>
-                                <textarea name="message" rows="5" cols="30">Fes la teva consulta.
-                                </textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" id="privacy" name="privacy"></td>
-                            <td><label for="privacy">Accepto la política de privacitat</label></td>
-                        </tr>
-                        <tr><td id="submit" colspan="2"><input type="submit" value="Enviar"></td></tr>
-                    </table>
-                </form>
+            </p>
+            
+            <div class="detail">
+                <h3>Características destacadas:</h3>
+                
+                <ul>
+                    <li><h4>Desarrollo de Software Personalizado:</h4></li>
+                    <p>Creamos soluciones de software a medida que se adaptan perfectamente a las necesidades específicas de tu empresa. Ya sea un sistema de gestión empresarial, una aplicación móvil o un software especializado, nuestro equipo de desarrolladores trabaja para convertir tus ideas en realidad.</p>
+                    <li><h4>Infraestructura Tecnológica Robusta:</h4></li>
+                    <p>Diseñamos, implementamos y gestionamos infraestructuras tecnológicas sólidas y seguras. Desde servidores en la nube hasta redes empresariales, garantizamos un entorno tecnológico que respalda el crecimiento de tu negocio y asegura la integridad de tus datos.</p>
+                    <li><h4>Consultoría Tecnológica:</h4></li>
+                    <p>Nuestros expertos en tecnología ofrecen servicios de consultoría para ayudarte a tomar decisiones informadas sobre la adopción de nuevas tecnologías. Analizamos tu actual infraestructura, identificamos áreas de mejora y te asesoramos sobre las últimas tendencias tecnológicas que podrían beneficiar a tu empresa.</p>
+                    <li><h4>Ciberseguridad Avanzada:</h4></li>
+                    <p>Protegemos tu empresa contra amenazas cibernéticas mediante la implementación de medidas de seguridad proactivas. Desde firewalls avanzados hasta programas de concienciación para empleados, nos comprometemos a mantener la integridad y confidencialidad de tus datos.</p>
+                    <li><h4>Soporte Técnico Personalizado:</h4></li>
+                    <p>Nuestro equipo de soporte técnico está disponible las 24 horas, los 7 días de la semana, para resolver cualquier problema técnico que puedas enfrentar. Ofrecemos un servicio personalizado y rápido para minimizar el tiempo de inactividad y mantener tu empresa en funcionamiento.</p>
+                </ul>
+                
+                <h3>Beneficios:</h3>
+                
+                <ul>
+                    <li>Aumento de la eficiencia operativa.</li>
+                    <li>Mejora de la productividad y la colaboración.</li>
+                    <li>Mayor seguridad y protección de datos.</li>
+                    <li>Adaptabilidad a las últimas tendencias tecnológicas.</li>
+                    <li>Asesoramiento estratégico para la toma de decisiones tecnológicas.</li>
+                </ul>
             </div>
         </div>
-
         
-        
-    </body>
+        <div class="footer">
+            <form action="/action_page.php">
+                <table align="center">
+                    <tr>
+                        <td><label for="fname">Nom:</label></td>
+                        <td><input type="text" id="fname" name="fname"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="service">Servei:</label></td>
+                        <td>
+                            <select name="service" id="service">
+                                <option value="servei1">Servei 1</option>
+                                <option value="servei2">Servei 2</option>
+                                <option value="servei3">Servei 3</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><label for="comment">Consulta:</label></td>
+                        <td>
+                            <textarea name="message" rows="5" cols="30">Fes la teva consulta.
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="privacy" name="privacy"></td>
+                        <td><label for="privacy">Accepto la política de privacitat</label></td>
+                    </tr>
+                    <tr><td id="submit" colspan="2"><input type="submit" value="Enviar"></td></tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
 </html>
