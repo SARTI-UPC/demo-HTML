@@ -1,29 +1,4 @@
 <!DOCTYPE html>
-
-<html>
-    <style>
-        table, th, td {
-          border:1px solid black;
-        }
-        </style>
-<head>
-    <title>
-        <quim-som>quim-som</quim-som>
-    </title>
-</head>
-
-<body>
-
-    <h1> qui somn</h1>
-    1. Introducción
-Se trata de un breve resumen del negocio, su misión y su propósito. En unas pocas frases deberías darle un pantallazo que de una idea clara de tu empresa u organización a cada internauta.
-Veamos un ejemplo de cómo podría ser la introducción en una marca personal de venta de ropa: «Somos una marca de moda joven y fresca, con un enfoque en la calidad y el diseño. 
-Nuestra misión es ofrecer ropa que inspire a las personas a sentirse seguras y seguras de sí mismas.»
-
-</body>
-
-</html>
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -37,15 +12,23 @@ Nuestra misión es ofrecer ropa que inspire a las personas a sentirse seguras y 
             padding: 0;
             background-color: #f7f7f7;
             color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        #content {
+            width: 80%; /* Ancho del contenido */
+            max-width: 1200px; /* Ancho máximo del contenido */
         }
         header {
-            background-color: #007bff;
+            background-color: #333;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
         nav {
-            background-color: #333;
+            background-color: #780000;
             color: #fff;
             padding: 10px;
             text-align: center;
@@ -64,53 +47,88 @@ Nuestra misión es ofrecer ropa que inspire a las personas a sentirse seguras y 
             padding: 20px;
             text-align: center;
         }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .center img {
+            margin: 0 10px; /* Espacio entre las imágenes */
+        }
+        h2 {
+            text-align: center;
+        } h3 {
+            text-align: center;}
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Nuestra Empresa</h1>
-</header>
+<div id="content">
+    <header>
+        <h1>Nuestra Empresa</h1>
+    </header>
 
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="productos.html">Productos</a>
-    <a href="contacto.html">Contacto</a>
-</nav>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="detalles.html">Detalles</a>
+        <a href="sectores.html">Sectores</a>
+        <a href="News.html">News</a>
+        <a href="opinions.html">Opinions</a>
 
-<section id="quienes-somos">
-    <h2>Quiénes Somos</h2>
-    <p>Somos una empresa comprometida con la excelencia y la satisfacción del cliente. Fundada en 20XX, nos hemos dedicado a proporcionar productos y servicios de alta calidad que superan las expectativas de nuestros clientes.</p>
-    
-    <h3>Nuestro Equipo</h3>
-    <table border="1">
-        <tr>
-            <th>Nombre</th>
-            <th>Cargo</th>
-        </tr>
-        <tr>
-            <td>Juan Pérez</td>
-            <td>CEO</td>
-        </tr>
-        <tr>
-            <td>María López</td>
-            <td>Gerente de Ventas</td>
-        </tr>
-        <tr>
-            <td>Carlos Martínez</td>
-            <td>Desarrollador Web</td>
-        </tr>
-    </table>
+    </nav>
 
-    <h3>Nuestras Instalaciones</h3>
-    <img src="instalaciones1.jpg" alt="Instalaciones 1" width="300">
-    <img src="instalaciones2.jpg" alt="Instalaciones 2" width="300">
-    <p>Nuestras instalaciones están equipadas con tecnología de vanguardia y ofrecen un ambiente propicio para el trabajo en equipo y la innovación.</p>
-</section>
+    <section id="quienes-somos">
+        <h2>Quiénes Somos</h2>
+        <div class="center">
+            <p>Somos una empresa comprometida con la excelencia y la satisfacción del cliente. Fundada en 2023, nos hemos dedicado a proporcionar productos y servicios de alta calidad que superan las expectativas de nuestros clientes.</p>
+        </div>
+        <h3>Nuestro Equipo</h3>
+        <div class="center">
 
-<footer>
-    <p>&copy; 2024 Nuestra Empresa. Todos los derechos reservados.</p>
-</footer>
+            <table border="1" class="center">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cargo</th>
+                </tr>
+                <tr>
+                    <td>Juan Pérez</td>
+                    <td>CEO</td>
+                </tr>
+                <tr>
+                    <td>María López</td>
+                    <td>Gerente de Ventas</td>
+                </tr>
+                <tr>
+                    <td>Carlos Martínez</td>
+                    <td>Desarrollador Web</td>
+                </tr>
+            </table>
+            
+         </div>
+        <h3>Nuestras Instalaciones</h3>
+        <div class="center">
+            <img src="zona-reuniones-grupo.jpg" alt="Instalaciones 1" width="300" height="250">
+            <img src="madrid_exterior_ingenieria-instalaciones.jpg" alt="Instalaciones 2" width="300" height="250">
+        </div>
+        <p>Nuestras instalaciones están equipadas con tecnología de vanguardia y ofrecen un ambiente propicio para el trabajo en equipo y la innovación.</p>
+    </section>
+    <div class="center">
+    <section id="sugerencias">
+        <h3>Sugerencias</h3>
+        <form action="#" method="post">
+            <label for="comentario">:</label><br>
+            <textarea id="comentario" name="comentario" placeholder="Escribe tu comentario aquí..." required></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Nuestra Empresa. Todos los derechos reservados.</p>
+    </footer>
+</div>
 
 </body>
 </html>
