@@ -1,0 +1,58 @@
+        body {
+            background-color: lightcyan;
+        }
+
+        #submit {text-align: center;}
+        
+        p, li, label {
+            font-size: 12px;
+            text-align: justify;
+        }
+        
+        p, li, label, h1, h3, h4 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .serviceTitle {
+            background: linear-gradient(to right, darkcyan 0 5%, lightcyan 15% 85%, darkcyan 95% 100%);
+            border-radius: 50%;
+            box-shadow: rgba(0,0,0,0.2) 0 2px 5px;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        .content {
+            background-color: lightgray;
+        }
+        
+        .contentDetail {
+            background-color: white;
+            /* background: linear-gradient(to bottom, darkcyan 0 2%, white 5% 95%, darkcyan 98% 100%); */
+            /* background: linear-gradient(to bottom,red 0 50%, blue 50% 100%); */
+            padding: 50px 100px;
+            text-align: center;
+        }
+        
+        .detail {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+        
+        .contentDetail, .footer {
+            border: 1px solid;
+            border-top: 5px solid;
+            border-bottom: 5px solid;
+            border-color: gray;
+            box-shadow: rgba(0,0,0,0.2) 2px 2px 5px;
+            margin: auto 10%;
+        }
+        
+        .footer {
+            /*background-color: darkcyan;*/
+            background: linear-gradient(to bottom, darkcyan, white);
+            display: flex;
+            justify-content: center;
+            padding: 2%;
+        }
