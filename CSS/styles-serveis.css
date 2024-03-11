@@ -65,13 +65,28 @@ h1 {
   text-align: center; 
   margin-top: 140px;
 }
-img {
-  border-radius: 10%;
-}
 i {
   padding-left: 10px; 
   color: cadetblue; 
   font-size: 20px;
+}
+a {
+  text-decoration: none;
+}
+
+.custom-link {
+  color:#CC0000;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+.custom-link:hover {
+  color: white;
+  font-weight: 500;
+  background-image: linear-gradient(to right, rgb(107, 16, 16), #CC0000);
+}
+.custom-link:visited {
+  color:#CCC;
 }
 
 
@@ -81,10 +96,10 @@ i {
 }
 .services-table {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: stretch;
     align-items: stretch;
-    height: 400px;
+    height: auto;
     gap: 10px;
 }
 .service-card {
@@ -109,6 +124,15 @@ i {
     gap: 10px;
     width: 100%;
     background-color: violet;
+}
+.card-item p {
+  font-size: small;
+}
+.card-item a {
+  padding: 10px;
+}
+.card-item a:hover {
+  color: white;
 }
 .card-item:nth-of-type(1){
     flex-grow: 2; 
@@ -135,9 +159,10 @@ i {
     margin: 5px;
 }
 img {
+    border-radius: 10%;
     width: 100px;
     height: 100px;
-    box-shadow: 5px 5px 15px;
+    box-shadow: 5px 5px 15px hsla(0, 0%, 20%, 0.5);
 }
 
 @keyframes in {
