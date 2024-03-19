@@ -1,0 +1,25 @@
+body {background-color: seashell;}
+h1 {
+    color:red;
+}
+/* estilo3.css */
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Combina los bordes de las celdas */
+}
+
+td {
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+/* Distribuir el ancho uniformemente entre las tres columnas */
+td:nth-child(1),
+td:nth-child(2),
+td:nth-child(3) {
+    width: calc(100% / 3);
+}
+img {
+    width: 200px; /* Ancho deseado para las imágenes */
+    height: 200px; /* Alto deseado para las imágenes */
+}

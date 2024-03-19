@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test html</title>
+    <link rel="stylesheet" href="../CSS/estilo4.css">
+</head>
+<body>
+
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="usuarios">Usuarios</a></li>
+                <li><a href="productos">Productos</a></li>
+                <li><a href="post">Posts</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+
+    <main>
+        <h1>Lista de usuarios</h1>
+        
+        <div class="paginator">
+        
+        </div>
+
+        
+        <div class="search">
+            <input type="text" placeholder="Search users...">
+            <button>Search</button>
+        </div>
+
+        
+        <a href="add-user.html" class="btn-add">agregar nuevo usuario</a>
+
+        <!-- List of Users -->
+        <ul class="user-list">
+            <li>
+                <input type="checkbox">
+                <img src="https://cdn-icons-png.flaticon.com/512/2922/2922524.png" alt="Avatar">
+                <p>Nombre y apellido</p>
+                <!-- Link to edit or delete page -->
+                <a href="edit-user.html" class="edit">Editar</a>
+            </li>
+        </ul>
+        <ul class="user-list">
+            <li>
+                <input type="checkbox">
+                <img src=" https://cdn-icons-png.flaticon.com/512/2922/2922572.png" alt="Avatar">
+                <p>Nombre y apellido</p>
+
+                <a href="edit-user.html" class="edit">Editar</a>
+            </li>
+        </ul>
+
+        <!-- Button to delete selected users -->
+        <button class="btn-delete">borrar usuarios sellecionados</button>
+    </main>
+
+    <!-- You can include your own scripts here -->
+    <script src="scripts.js"></script>
+</body>
+</html>
